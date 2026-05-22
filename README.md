@@ -4,7 +4,9 @@ Public binary releases for `receipt connect`.
 
 `receipt connect` lets a signed-in user lend local CLI credentials, such as
 `aws`, `gh`, `git`, `kubectl`, or `gcloud`, to Receipt cloud jobs without
-uploading those credentials to Receipt.
+running a local daemon. AWS credentials are imported from the user's local AWS
+CLI, validated locally, and stored in Receipt's encrypted org-scoped connection
+store. SaaS connectors such as Jira use the hosted Connect flow.
 
 ## Install
 
@@ -17,6 +19,16 @@ Then run:
 ```bash
 receipt connect setup
 receipt connect
+```
+
+Useful commands:
+
+```bash
+receipt connect aws --profile prod
+receipt connect jira
+receipt connect status
+receipt connect disconnect --provider aws --name prod
+receipt connect relay --capability aws
 ```
 
 ## Supported Platforms
