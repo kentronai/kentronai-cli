@@ -2,11 +2,11 @@
 
 Public binary releases for `receipt connect`.
 
-`receipt connect` lets a signed-in user lend local CLI credentials, such as
-`aws`, `gh`, `git`, `kubectl`, or `gcloud`, to Receipt cloud jobs without
-running a local daemon. AWS credentials are imported from the user's local AWS
-CLI, validated locally, and stored in Receipt's encrypted org-scoped connection
-store. SaaS connectors such as Jira use the hosted Connect flow.
+`receipt connect` lets a signed-in user connect workspace resources such as
+AWS, Google Cloud, GitLab, Linear, Datadog, Sentry, Cloudflare, Vercel,
+Terraform Cloud, Incident.io, Azure DevOps, and Confluence through Receipt's
+hosted Nango-backed Connect flow. Receipt stores only encrypted org-scoped
+connection references.
 
 ## Install
 
@@ -25,10 +25,11 @@ Useful commands:
 
 ```bash
 receipt connect aws --profile prod
-receipt connect jira
+receipt connect gcp
+receipt connect gitlab
+receipt connect datadog
 receipt connect status
 receipt connect disconnect --provider aws --name prod
-receipt connect relay --capability aws
 ```
 
 ## Supported Platforms
