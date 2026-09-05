@@ -1,4 +1,4 @@
-# Kentronai CLI
+# Kentron AI CLI
 
 Public binary releases for `kentronai`, the CLI that connects Receipt
 workspace resources and runs the Receipt MCP bridge.
