@@ -90,5 +90,5 @@ kentronai mcp status codex
 ## What Is In This Repo
 
 This repository contains only the public installer and release artifacts for
-the connect-only CLI. The private Receipt application source is not
+the connect-only CLI. The private Kentron AI application source is not
 published here.
