@@ -18,8 +18,6 @@ export PATH="$HOME/.local/bin:$PATH"
 kentronai --version
 ```
 
-Do not use `npm install kentronai`; that is an unrelated package.
-
 ## 2. Sign in
 
 ```bash
